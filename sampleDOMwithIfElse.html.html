@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Mendoza, Allen Ray-->
+<title>Age Checker</title>
+</head>
+
+<body>
+
+<h2>Age Checker</h2>
+
+<input type="number" id="ageInput" placeholder="Enter your age">
+<button onclick="checkAge()">Check Age</button>
+
+<p id="message"></p>
+
+<script>
+function checkAge() {
+    let age = document.getElementById("ageInput").value;
+    let message = document.getElementById("message");
+
+    if (age >= 18) {
+        message.innerHTML = "You are an adult!";
+        document.body.style.backgroundColor = "#4CAF50";
+    } else {
+        message.innerHTML = "You are a minor!";
+        document.body.style.backgroundColor = "#FF5733";
+    }
+}
+</script>
+
+</body>
+</html>
